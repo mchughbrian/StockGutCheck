@@ -6,16 +6,23 @@ Please view code in nbviewer (https://nbviewer.jupyter.org/github/mchughbrian/St
 I developed this code as a way to easily check the fundamentals of a companies stock based on its competitors. 
 
 
-# Methods / Skills
+# Methods
 
-Polygon API 
+Allow user to input ticker of interest. 
 
-Yfinance API 
+Using Polygon API get similar tickers and remove EFTS and Mutual Funds 
 
-Classes set up 
+Create a dictionary of classess for each ticker with information taken from YFinance API 
+  -Market Cap 
+  -Earnings & Revenue 
+  -Price to Book , PE Ratio, PEG Ratio, Price to book 
+  -Price History
 
-DataFrame set up 
-
+Plot data against other tickers to visualize differences. 
 
 # Learnings: 
+For multiple bar graph plot needed to get in the correct form for Plotly. Create multilevel indexed dataframe and transposed for ease of use with plotly. 
 
+Using a dictonary of classes to keep track of all ticker attributes prevented multiple API calls throughout code. 
+
+Indexing through dataframes and updating dataframes. 
