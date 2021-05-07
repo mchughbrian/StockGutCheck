@@ -21,7 +21,7 @@ Create a dictionary of classess for each ticker with information taken from YFin
 Plot data against other tickers to visualize differences. 
 
 # Learnings: 
-For multiple bar graph plot needed to get in the correct form for Plotly. Create multilevel indexed dataframe and transposed for ease of use with plotly. 
+The multiple bar graph plot in plotly needed to be in certain format. Created multilevel indexed dataframe and transposed for ease of use with plotly. 
 
 Using a dictonary of classes to keep track of all ticker attributes prevented multiple API calls throughout code. 
 
