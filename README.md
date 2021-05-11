@@ -1,6 +1,6 @@
 # StockGutCheck
 Please view code in nbviewer (https://nbviewer.jupyter.org/github/mchughbrian/StockGutCheck/blob/main/Stock%20Exploration%20-%20Data%20Viz%20and%20structures.ipynb)
-
+**Used Plotly to create interactive plots**
 
 # Purpose: 
 I developed this code as a way to easily check the fundamentals of a companies stock based on its competitors. Additionally, this code was written to reinforce python data structures and visualizations.
