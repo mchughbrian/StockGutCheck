@@ -3,7 +3,7 @@ Please view code in nbviewer (https://nbviewer.jupyter.org/github/mchughbrian/St
 
 
 # Purpose: 
-I developed this code as a way to easily check the fundamentals of a companies stock based on its competitors. 
+I developed this code as a way to easily check the fundamentals of a companies stock based on its competitors. Additionally, this code was written to reinforce python data structures and visualizations.
 
 
 # Methods
