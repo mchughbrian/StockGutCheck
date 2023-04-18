@@ -27,15 +27,18 @@ screened_stocks = pd.DataFrame(columns=['Ticker', 'P/E Ratio', 'P/B Ratio', 'Div
 # Initialize an empty list to store the tickers that meet the criteria
 selected_tickers = []
 
+#For testing just going to do the first 10 stocks
+sp500_tickers = sp500_tickers[:10]
+
 for ticker in sp500_tickers:
         try:
             stock = yf.Ticker(ticker)
 
             # Fetch key statistics
             info = stock.info
-            pe_ratio = info['trailingPE']
-            pb_ratio = info['priceToBook']
-            dividend_yield = info['dividendYield']
+            pe_ratio = float(info.get('PERatio', 0))
+            pb_ratio = float(info.get('PriceToBookRatio', 0))
+            dividend_yield = float(info.get('DividendYield', 0))
 
             if (pe_ratio < pe_ratio_threshold and
                 pb_ratio < pb_ratio_threshold and
